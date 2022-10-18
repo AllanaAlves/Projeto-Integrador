@@ -1,11 +1,12 @@
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 .btn {
     position: relative;
     background-color: #FAFAFF;
     text-decoration: none;
+    border: no;
 
 }
 
@@ -16,7 +17,7 @@ body {
     height: 2px;
     left: 0;
     bottom: 0;
-    background-color: #fff;
+    background-color: #001d3d;
     border: none;
     transform: scale(0,1);
     transition: transform 0.3s ease;
