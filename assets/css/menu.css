@@ -37,3 +37,18 @@ body {
 .logomenu {
     justify-content: start;
 }
+.imagem-carrossel1{
+    object-fit: cover;
+    object-position: 0 50%;
+    height: 500px;
+}
+.imagem-carrossel2{
+    object-fit: cover;
+    object-position: 0 80%;
+    height: 500px;
+}
+.imagem-carrossel3{
+    object-fit: cover;
+    object-position: 0% 40%;
+    height: 500px;
+}
