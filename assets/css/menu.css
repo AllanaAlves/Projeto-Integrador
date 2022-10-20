@@ -52,3 +52,29 @@ body {
     object-position: 0% 40%;
     height: 500px;
 }
+.teste{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+    h5 {
+        line-height: 1.8em;
+        border-right: 2.5px solid #fff;
+        white-space: nowrap;
+         overflow: hidden;
+         animation: 
+         escrevendo 3.5s steps(30, end),
+         cursor .5s infinite;
+     }
+     
+     @keyframes escrevendo {
+       from { width: 0 }
+       to { width: 100% }
+     }
+     
+     /* The typewriter cursor effect */
+     @keyframes cursor {
+       0% { border-color: transparent }
+       50% { border-color: #fff }
+     }
