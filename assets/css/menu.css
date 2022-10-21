@@ -39,17 +39,12 @@ body {
 }
 .imagem-carrossel1{
     object-fit: cover;
-    object-position: 0 50%;
+    object-position: 0 20%;
     height: 500px;
 }
 .imagem-carrossel2{
     object-fit: cover;
-    object-position: 0 80%;
-    height: 500px;
-}
-.imagem-carrossel3{
-    object-fit: cover;
-    object-position: 0% 40%;
+    object-position: 0 50%;
     height: 500px;
 }
 .teste{
@@ -58,7 +53,7 @@ body {
     align-items: center;
 }
 
-    h5 {
+    h1 {
         line-height: 1.8em;
         border-right: 2.5px solid #fff;
         white-space: nowrap;
