@@ -40,12 +40,12 @@ body {
 .imagem-carrossel1{
     object-fit: cover;
     object-position: 0 20%;
-    height: 500px;
+    height: 695px;
 }
 .imagem-carrossel2{
     object-fit: cover;
     object-position: 0 50%;
-    height: 500px;
+    height: 695px;
 }
 .teste{
     display: inline-block;
