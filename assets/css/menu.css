@@ -2,31 +2,119 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-.btn {
-    position: relative;
-    background-color: #FAFAFF;
-    text-decoration: none;
-    border: no;
+.logomenu {
+    justify-content: start;
+}
+
+.imagem-carrossel1 {
+    object-fit: cover;
+    object-position: 0 20%;
+    height: 695px;
+    margin-bottom: 85px;
+}
+
+.imagem-carrossel2 {
+    object-fit: cover;
+    object-position: 0 50%;
+    height: 695px;
+    margin-bottom: 85px;
+}
+
+.teste {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    line-height: 1.8em;
+    border-right: 2.5px solid #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+        escrevendo 3.5s steps(30, end),
+        cursor .5s infinite;
+}
+
+@keyframes escrevendo {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes cursor {
+    0% {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: #fff
+    }
+}
+
+/*Espaçamentos Adicionais e Menu*/
+
+.espacamento {
+    box-sizing: border-box;
+    /*adiciona os demais espaços(padding ou margin) ao max-width*/
+    max-width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 100px;
+    margin-left: auto;
+    /*margin-left e margin-right -> alinham os itens ao centro*/
+    margin-right: auto;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.header-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
 
 }
 
-.btn::after{
+.header-menu .btn {
+    background-color: #FFF;
+    text-decoration: none;
+    border: none;
+    display: inline-block;
+    padding: 16px;
+    position: relative;
+}
+
+.header-menu .btn::after {
     content: '';
     position: absolute;
-    width: 100%;
+    width: 0%;
     height: 2px;
     left: 0;
     bottom: 0;
     background-color: #001d3d;
     border: none;
-    transform: scale(0,1);
+    transform: scale(0, 1);
     transition: transform 0.3s ease;
     padding: 0;
     margin: 0;
+    display: block;
 }
 
 
-.btn:hover::after {
+.header-menu .btn:hover::after {
     transform: scale(1);
     border: none;
     text-decoration: none;
@@ -34,42 +122,20 @@ body {
     margin: 0;
 }
 
-.logomenu {
-    justify-content: start;
-}
-.imagem-carrossel1{
-    object-fit: cover;
-    object-position: 0 20%;
-    height: 695px;
-}
-.imagem-carrossel2{
-    object-fit: cover;
-    object-position: 0 50%;
-    height: 695px;
-}
-.teste{
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
+.header-menu .btn:hover::after,
+.header-menu .btn.ativo::after {
+  width: 100%;
 }
 
-    h1 {
-        line-height: 1.8em;
-        border-right: 2.5px solid #fff;
-        white-space: nowrap;
-         overflow: hidden;
-         animation: 
-         escrevendo 3.5s steps(30, end),
-         cursor .5s infinite;
-     }
-     
-     @keyframes escrevendo {
-       from { width: 0 }
-       to { width: 100% }
-     }
-     
-     /* The typewriter cursor effect */
-     @keyframes cursor {
-       0% { border-color: transparent }
-       50% { border-color: #fff }
-     }
+.margem {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 85px;
+    padding-right: 85px;
+}
+
+/*Efeito Zebrado para as tabelas*/
+
+tr:nth-child(even) {
+    background-color: lightgrey;
+}
