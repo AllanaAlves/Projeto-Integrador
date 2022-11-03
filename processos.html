@@ -36,7 +36,7 @@
       <nav aria-label="primaria">
         <ul class="header-menu font-1-m cor-0">
           <li><a class="nav-link btn" style="color: #001d3d" ; font-size: 16px; href="./homeoficial.html">Home</a></li>
-          <li><a class="nav-link btn" style="color: #001d3d" ; font-size: 16px; " href=" ./agenda.html">Agenda</a></li>
+          <li><a class="nav-link btn" style="color: #001d3d" ; font-size: 16px;  href=" ./agenda.html">Agenda</a></li>
           <li><a class="nav-link btn" style="color: #001d3d" ; font-size: 16px; href="./homeoficial.html">+Processo</a></li>
           <li><a class="nav-link btn" style="color: #001d3d" ; font-size: 16px; href="./processos.html">Consulta</a></li>
           <li><a class="nav-link btn" style="color: #001d3d" ; font-size: 16px; href="./index.html">Sair</a></li>
@@ -47,6 +47,10 @@
 
   <div class="margem">
     <h2>Processos</h2>
+    <form class="form-inline">
+      <input id="input-busca" class="form-control mr-sm-2" type="search" placeholder="Busca" aria-label="Search">
+      <a href="#input-busca"><img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>
+    </form>
     <table class="table">
       <thead class="thead-dark">
         <tr>
@@ -56,7 +60,7 @@
           <th scope="col">Situação</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody id="tabela">
         <tr>
           <th scope="row">06/11/22</th>
           <td>09427866</td>
@@ -172,6 +176,7 @@
   </footer>
 
   <script src="assets/js/script.js"></script>
+  <script src="assets/js/pesquisa.js"></script>
 </body>
 
 </html>

@@ -38,11 +38,6 @@ body {
   background: #FFFAFA;
   height: 100vh;
   overflow: hidden;
-  --bg-grey-light: #FFFAFA;
-  --bg-white: #FFFAFA;
-  --bg-blue-dark: #001d3d;
-  background-color: var(--bg-grey-light);
-
 }
 
 
@@ -169,29 +164,4 @@ input[type="submit"]:hover {
 
 .signup_link a:hover {
   text-decoration: underline;
-}
-
-.dark {
-  --text-white: #FFFAFA;
-  --text-dark: #FFFAFA;
-  --bg-grey-light: #001d3d;
-  --bg-blue-dark: #001d3d;
-}
-
-.buttons {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 40px;
-}
-
-.button {
-  width: 250px;
-  padding: 5px;
-  height: 40px;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  background-color: var(--bg-indigo);
-  color: var(--text-white);
 }

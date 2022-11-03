@@ -139,3 +139,13 @@ h1 {
 tr:nth-child(even) {
     background-color: lightgrey;
 }
+
+/* lupa de pesquisa */
+.search-icon{
+    position: relative;
+    float: right;
+    width: 75px;
+    height: 75px;
+    top: -56px;
+    right: -20px;
+  }

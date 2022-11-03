@@ -47,6 +47,10 @@
 
   <div class="margem">
     <h2>Agenda</h2>
+    <form class="form-inline">
+      <input id="input-busca" class="form-control mr-sm-2" type="search" placeholder="Busca" aria-label="Search">
+      <a href="#input-busca"><img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>
+    </form>
     <table class="table">
       <thead class="thead-dark">
         <tr>
@@ -56,7 +60,7 @@
           <th scope="col">Assunto</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody id="tabela">
         <tr>
           <th scope="row">23/06/22</th>
           <td>Marcelo Novais de Souza</td>
@@ -154,6 +158,7 @@
   </footer>
 
   <script src="assets/js/script.js"></script>
+  <script src="assets/js/pesquisa.js"></script>
 </body>
 
 </html>
