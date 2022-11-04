@@ -10,7 +10,7 @@
 }
 
 .footer-bg{
-  background-color: #FAFAFF;
+  background-color: #d2d4d7;
 }
 
 .footer{
@@ -32,15 +32,14 @@
 
 .footer li{
   margin-bottom: 16px;
-  margin-left: -35px;
 }
 
 .footer-contato li:nth-child(even):after{
   content: "";
   display: block;
   max-width: 360px;
-  height: 2px;
-  background-color: #001d3d;
+  height: 3px;
+  background-color: #FAFAFF;
   margin-top: 16px;
 }
 
@@ -54,10 +53,6 @@
 }
 
 @media (max-width: 800px){
-  .footer > img{
-    display: none;
-  }
-
   .footer {
     grid-template-columns: 1fr 1fr;
   }
@@ -103,7 +98,6 @@
 body {
   margin: 0px;
   font-family: Arial, Helvetica, sans-serif;
-  color: #FAFAFF;
 }
 
 h1,

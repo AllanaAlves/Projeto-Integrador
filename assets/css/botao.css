@@ -1,0 +1,36 @@
+span {
+  background: #001d3d;
+  color: #fcfcfd;
+  border-radius: 3px;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: absolute;
+  margin-left: 85px;
+  display: inline-block;
+  text-transform: uppercase;
+  font: 300 1.125rem/1.35 sans-serif;
+  max-width: max-content;
+  border: none;
+  cursor: pointer;
+}
+
+/*Botão para tela INICIAL*/
+.botao {
+  display: inline-block;
+  background: #001d3d;
+  color: #fcfcfd;
+  border-radius: 3px;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fcfcfd;
+  max-width: max-content;
+  cursor: pointer;
+}
+
+.botao:hover {
+  background: #003049;
+}

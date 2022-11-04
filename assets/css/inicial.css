@@ -1,0 +1,83 @@
+.titulo-bg {
+  background-color: #d2d4d7;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.inicial {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: url(../../img/dec/top-right.svg) no-repeat top 40px right 20px;
+}
+
+.inicial-imagem {
+  display: grid;
+}
+
+.inicial-imagem span {
+  grid-area: 1/1;
+  place-self: start end;
+  margin-top: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  display: inline-block;
+  padding: 8px 16px 8px 8px;
+  border-radius: 4px 0 0 4px;
+}
+
+.inicial-conteudo {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-content: start;
+}
+
+.inicial-conteudo h2,
+.inicial-conteudo p {
+  grid-column: 1/-1;
+}
+
+.inicial-conteudo h2 {
+  margin-bottom: 20px;
+}
+
+.inicial-conteudo h2::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 8px;
+  background-color: #001d3d;
+  margin-bottom: 8px;
+}
+
+.inicial-conteudo p {
+  margin-bottom: 32px;
+}
+
+.inicial a {
+  place-self: end;
+}
+
+.inicial li {
+  display: flex;
+  align-items: center;
+}
+
+.inicial li+li {
+  margin-top: 16px;
+}
+
+.inicial-conteudo img {
+  width: 24px;
+  margin-right: 8px;
+}
+
+@media (max-width: 800px) {
+  .inicial {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
