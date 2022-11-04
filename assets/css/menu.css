@@ -26,12 +26,6 @@ body {
     align-items: center;
 }
 
-h1 {
-    line-height: 1.8em;
-    border-right: 2.5px solid #fff;
-    white-space: nowrap;
-    overflow: hidden;
-}
 /*    animation:
         escrevendo 3.5s steps(30, end),
         cursor .5s infinite;
@@ -62,7 +56,6 @@ The typewriter cursor effect
 
 .espacamento {
     box-sizing: border-box;
-    /*adiciona os demais espaços(padding ou margin) ao max-width*/
     max-width: 1200px;
     padding-left: 20px;
     padding-right: 20px;
@@ -71,6 +64,12 @@ The typewriter cursor effect
     /*margin-left e margin-right -> alinham os itens ao centro*/
     margin-right: auto;
 }
+
+.titulo-bg {
+    background-color: #d2d4d7;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 
 .header {
     display: flex;
@@ -105,7 +104,7 @@ The typewriter cursor effect
     height: 2px;
     left: 0;
     bottom: 0;
-    background-color: #001d3d;
+    background-color: #805b10;
     border: none;
     transform: scale(0, 1);
     transition: transform 0.3s ease;
@@ -149,4 +148,21 @@ tr:nth-child(even) {
     height: 75px;
     top: -56px;
     right: -20px;
+  }
+
+  .form-inline{
+    font: 400 1rem/1.5 sans-serif;
+    background-color: #fff;
+    border: 2px solid #ededed;
+    padding: 12px;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+   #input-busca:focus{
+    outline: none;
+    border-color:#805b10;
+    background-color: #f7f7f7;
+    box-shadow: 0 0 0 2px #db9f2750;
   }

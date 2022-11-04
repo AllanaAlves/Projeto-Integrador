@@ -4,17 +4,19 @@
   padding-bottom: 60px;
 }
 
-.article-lista {
-  padding-top: 60px;
-  padding-bottom: 120px;
-  padding-left: 300px;
+.flex-escolha {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  margin: 0 auto; 
 }
 
-.article-lista h2 {
+.flex-escolha h2 {
   margin-bottom: 40px;
+  margin-left: 155px;
 }
 
-.article-lista ul {
+.flex-escolha ul {
   display: flex;
   flex-wrap: wrap;
   max-width: 1400px;
@@ -27,49 +29,29 @@
   /*Criar barra scroll quando necessário para uma parte específica do site*/
 }
 
-.article-lista ul {
-  padding: 0px 0px 20px 0px;
-}
 
-.article-lista li {
-  min-width: 280px;
-}
-
-.article-lista a {
-  display: block;
-}
-
-.article-lista h3 {
-  margin-bottom: 8px;
-  display: flex;
-  align-items: center;
-}
-
-.article-lista h3::before {
+.flex-escolha h3::before {
   content: "";
   display: inline-block;
   height: 8px;
   width: 12px;
   margin-right: 8px;
-  background-color: #001d3d;
+  background-color: #805b10;;
   transition: width 0.2s;
 }
 
-.article-lista a:hover h3::before {
+.flex-escolha a:hover h3::before {
   width: 24px;
 }
 
-.article-lista li span {
-  padding-left: 20px;
-}
 
 @media (max-width: 800px) {
-  .article-lista {
+  .flex-escolha {
     padding-top: 40px;
     padding-bottom: 60px;
   }
 
-  .article-lista ul {
+  .flex-escolha ul {
     gap: 25px;
   }
 }

@@ -1,16 +1,14 @@
 .conteiner {
   box-sizing: border-box;
-  /*adiciona os demais espaços(padding ou margin) ao max-width*/
   max-width: 1200px;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
-  /*margin-left e margin-right -> alinham os itens ao centro*/
   margin-right: auto;
 }
 
 .footer-bg{
-  background-color: #d2d4d7;
+  background-color: #e9eaec;
 }
 
 .footer{
@@ -38,13 +36,13 @@
   content: "";
   display: block;
   max-width: 360px;
-  height: 3px;
-  background-color: #FAFAFF;
+  height: 2px;
+  background-color: #805b10;
   margin-top: 16px;
 }
 
 .footer a:hover{
-  color: #133a64d5;
+  color: #805b10;
 }
 
 .footer-copy{
@@ -116,6 +114,11 @@ ul {
 }
 
 li > a{
+  text-decoration: none;
+  color: inherit;
+}
+
+a {
   text-decoration: none;
   color: inherit;
 }
