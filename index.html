@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="assets/css/index.css">
   <title>Softway Forsetti | Login</title>
+  <script src="assets/js/login.js"></script>
 </head>
 
 <body>
@@ -29,8 +31,8 @@
       </svg>
 
     </div>
-    <form method="POST" action="homeoficial.html">
-      <div class="txt_field">
+    <form class="login_form">
+      <div class=" txt_field">
         <input type="text" required name="usuario_funcionario">
         <span></span>
         <label>Usuário</label>
@@ -43,7 +45,9 @@
       <a href="cadastro.html" class="pass">Cadastre-se</a>
       <br><br>
       <div>
-        <input type="submit" value="Login" name="login">
+        <button type="submit" class="submit_form_button">
+          Login
+        </button>
         <div class="signup_link">
         </div>
     </form>
